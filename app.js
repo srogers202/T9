@@ -2,13 +2,12 @@
 
     usage:
 
-    var T9 = require('app');
-    var t9 = T9(); // loads the word list dictionary
+    var t9 = require('app'); // loads the word list dictionary
 
     t9.retrieveWordList('228');
 
 **/
-module.exports = function() {
+module.exports = (function() {
 
     // load dictionary
     var wordListJson = require('word-list-json');
@@ -34,4 +33,4 @@ module.exports = function() {
     return {
         retrieveWordList: myT9.retrieveWordList
     };
-}
+})();

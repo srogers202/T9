@@ -16,6 +16,7 @@
     "t9"
   ],
   "dependencies": {
+    "mocha": "^2.2.5",
     "require": "^2.4.18",
     "word-list-json": "^0.2.0"
   }
